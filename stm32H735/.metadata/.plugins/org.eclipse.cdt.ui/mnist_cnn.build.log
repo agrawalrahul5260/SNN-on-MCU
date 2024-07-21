@@ -1,0 +1,10 @@
+14:29:16 **** Incremental Build of configuration Debug for project mnist_cnn ****
+make -j8 all 
+arm-none-eabi-size  mnist_cnn.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 116228	     96	   2128	 118452	  1ceb4	mnist_cnn.elf
+Finished building: default.size.stdout
+ 
+
+14:29:16 Build Finished. 0 errors, 0 warnings. (took 180ms)
+

@@ -1,0 +1,13 @@
+../Core/Src/main.c:81:6:update_neuron	24	static
+../Core/Src/main.c:93:6:conv1_2d	64	static
+../Core/Src/main.c:118:6:conv2_2d	64	static
+../Core/Src/main.c:143:6:conv3_2d	64	static
+../Core/Src/main.c:168:6:maxpool2d	72	static
+../Core/Src/main.c:196:5:inference	751888	dynamic
+../Core/Src/main.c:385:5:main	120	static
+../Core/Src/main.c:450:6:SystemClock_Config	120	static
+../Core/Src/main.c:509:6:PeriphCommonClock_Config	192	static
+../Core/Src/main.c:537:13:MX_TIM1_Init	104	static
+../Core/Src/main.c:607:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:656:13:MX_GPIO_Init	64	static
+../Core/Src/main.c:815:6:Error_Handler	4	static,ignoring_inline_asm

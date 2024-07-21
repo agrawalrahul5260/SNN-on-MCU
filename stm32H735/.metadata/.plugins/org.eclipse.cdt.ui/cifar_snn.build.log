@@ -1,0 +1,30 @@
+14:29:12 **** Incremental Build of configuration Debug for project cifar_snn ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H735xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:28:
+../Core/Inc/cifar10_images.h:9:82: warning: missing braces around initializer [-Wmissing-braces]
+    9 | float cifar10_images[NUM_TEST_IMAGES][NUM_CHANNELS][IMAGE_HEIGHT][IMAGE_WIDTH] = {
+      |                                                                                  ^
+../Core/Inc/cifar10_images.h:9:82: warning: missing braces around initializer [-Wmissing-braces]
+../Core/Inc/cifar10_images.h:9:82: warning: missing braces around initializer [-Wmissing-braces]
+../Core/Inc/cifar10_images.h:9:82: warning: missing braces around initializer [-Wmissing-braces]
+../Core/Inc/cifar10_images.h:9:82: warning: missing braces around initializer [-Wmissing-braces]
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:400:14: warning: variable 'timestamp1' set but not used [-Wunused-but-set-variable]
+  400 |     uint32_t timestamp1;
+      |              ^~~~~~~~~~
+../Core/Src/main.c:399:14: warning: variable 'timestamp0' set but not used [-Wunused-but-set-variable]
+  399 |     uint32_t timestamp0;
+      |              ^~~~~~~~~~
+../Core/Src/main.c:398:9: warning: variable 'predicted_class' set but not used [-Wunused-but-set-variable]
+  398 |     int predicted_class;
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "cifar_snn.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/rahul/STM32CubeIDE/neural_net_on_mcu/cifar_snn/STM32H735IGKX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cifar_snn.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: cifar_snn.elf section `.rodata' will not fit in region `FLASH'
+/opt/st/stm32cubeide_1.15.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: region `FLASH' overflowed by 3580464 bytes
+collect2: error: ld returned 1 exit status
+make: *** [makefile:64: cifar_snn.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+14:29:16 Build Failed. 3 errors, 8 warnings. (took 4s.162ms)
+

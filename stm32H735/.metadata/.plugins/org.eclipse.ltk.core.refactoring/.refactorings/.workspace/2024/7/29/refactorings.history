@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;mnist_cnn/Core/Inc/mnist_test_images.h&apos;" deleteContents="false" description="Delete resource &apos;mnist_cnn/Core/Inc/mnist_test_images.h&apos;" element1="/mnist_cnn/Core/Inc/mnist_test_images.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1721252608808"/>
+</session>
